@@ -29,6 +29,7 @@
     <td class="actions" data-hook="admin_pages_index_row_actions">
       <%= link_to_edit page, :no_text => true %>
       <%= link_to_delete page, :no_text => true %>
+      <%= link_to_with_icon 'translate', nil, admin_translations_path('page', page.id), title: Spree.t(:'i18n.translations'), class: 'btn btn-sm btn-primary' %>
     </td>
   </tr>
   <% end -%>
